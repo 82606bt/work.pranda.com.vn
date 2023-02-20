@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PRANDA GROUP WORK</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/user/logo.png?ver=1" />
+    <link rel="stylesheet" href="css/backend-plugin.min.css">
+    <link rel="stylesheet" href="css/backend.css?v=1.0.0">
+    <link rel="stylesheet" href="css/line-awesome.min.css?ver=1">
+    <link rel="stylesheet" href="css/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/design.js"></script>
+</head>
+
+<body class="">
+    <!-- loader Start -->
+    <div id="loading">
+        <div id="loading-center">
+        </div>
+    </div>
+    <!-- loader END -->
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+
+        <div class="iq-sidebar  sidebar-default ">
+            <div class="iq-sidebar-logo d-flex align-items-center">
+                <a href="./trangchu.html" class="header-logo">
+                    <img src="images/user/logo_pranda.png" alt="logo">
+                </a>
+                <div class="iq-menu-bt-sidebar ml-0">
+                    <i class="las la-bars wrapper-menu"></i>
+                </div>
+            </div>
+            <div class="data-scrollbar" data-scroll="1">
+                <nav class="iq-sidebar-menu">
+                    <ul id="iq-sidebar-toggle" class="iq-menu">
+                        <li class="">
+                            <a href="/trangchu.html" class="svg-icon">
+                                <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../backend/index.html" class="svg-icon">
+                                <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="pt-5 pb-2"></div>
+            </div>
+        </div>
+        <div class="iq-top-navbar">
+            <div class="iq-navbar-custom">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
+                        <i class="ri-menu-line wrapper-menu"></i>
+                        <a href="../backend/index.html" class="header-logo">
+                        </a>
+                    </div>
+                    <div class="navbar-breadcrumb">
+                        <h5>CÔNG VIỆC</h5>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-label="Toggle navigation">
+                            <i class="ri-menu-3-line"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto navbar-list align-items-center">
+                                <li>
+                                    <div class="iq-search-bar device-search">
+                                        <form action="#" class="searchbox">
+                                            <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                                            <input type="text" class="text search-input" placeholder="Tìm kiếm...">
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon search-content">
+                                    <a href="#" class="search-toggle rounded" id="dropdownSearch" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="ri-search-line"></i>
+                                    </a>
+                                    <div class="iq-search-bar iq-sub-dropdown dropdown-menu"
+                                        aria-labelledby="dropdownSearch">
+                                        <form action="#" class="searchbox p-2">
+                                            <div class="form-group mb-0 position-relative">
+                                                <input type="text" class="text search-input font-size-12"
+                                                    placeholder="type here to search...">
+                                                <a href="#" class="search-link"><i class="las la-search"></i></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon nav-item-icon dropdown">
+                                    <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton2"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span class="bg-primary"></span>
+                                    </a>
+                                    <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <div class="card shadow-none m-0">
+                                            <div class="card-body p-0 ">
+                                                <div class="cust-title p-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0">All Messages</h5>
+                                                        <a class="badge badge-primary badge-card" href="#">3</a>
+                                                    </div>
+                                                </div>
+                                                <a class="right-ic btn btn-primary btn-block position-relative p-2"
+                                                    href="#" role="button">
+                                                    View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon nav-item-icon dropdown">
+                                    <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <span class="bg-primary "></span>
+                                    </a>
+                                    <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="card shadow-none m-0">
+                                            <div class="card-body p-0 ">
+                                                <div class="cust-title p-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0">Notifications</h5>
+                                                        <a class="badge badge-primary badge-card" href="#">3</a>
+                                                    </div>
+                                                </div>
+                                                <a class="right-ic btn btn-primary btn-block position-relative p-2"
+                                                    href="#" role="button">
+                                                    View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon dropdown caption-content">
+                                    <a href="#" class="search-toggle dropdown-toggle  d-flex align-items-center"
+                                        id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <img src="images/user/longdoan.jpg" class="img-fluid rounded-circle"
+                                            alt="user">
+                                        <div class="caption ml-3">
+                                            <h6 class="mb-0 line-height">Long Doãn<i
+                                                    class="las la-angle-down ml-2"></i></h6>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right border-none"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-01-p" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            <a href="../app/user-profile.html">My Profile</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-02-p" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                            </svg>
+                                            <a href="../app/user-profile-edit.html">Edit Profile</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-03-p" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            <a href="../app/user-account-setting.html">Account Settings</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-04-p" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                            </svg>
+                                            <a href="../app/user-privacy-setting.html">Privacy Settings</a>
+                                        </li>
+                                        <li class="dropdown-item  d-flex svg-icon border-top">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-05-p" width="20"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                            </svg>
+                                            <a href="../backend/auth-sign-in.html">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center justify-content-between breadcrumb-content">
+                                    <h5>WORK</h5>
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                        <div class="dropdown status-dropdown mr-3">
+                                            <div class="dropdown-toggle" id="dropdownMenuButton03" data-toggle="dropdown">
+                                            <div class="btn bg-body"><span class="h6">Status :</span> In Progress<i class="ri-arrow-down-s-line ml-2 mr-0"></i></div>
+                                            </div>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton03">
+                                                <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(211, 211, 211);"></i>To Do</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(4, 169, 244);"></i>In Progress</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(107, 201, 80);"></i>Compeleted</a> 
+                                            </div>
+                                        </div>
+                                        <div class="list-grid-toggle d-flex align-items-center mr-3">
+                                            <div data-toggle-extra="tab" data-target-extra="#grid" class="active">
+                                                <div class="grid-icon mr-3">
+                                                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div data-toggle-extra="tab" data-target-extra="#list">
+                                                <div class="grid-icon">
+                                                    <svg  width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pl-3 btn-new border-left">
+                                            <a href="javascript:addtodo()" class="btn btn-primary">New Task</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+                <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card-transparent mb-0 desk-info">
+                                <div class="card-body p-0">                           
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card" style="border-top: 4px solid rgb(211, 211, 211);">
+                                                <div class="card-body" id="todo" onmouseover="show()" onmouseout="hide()">                           
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5>To Do &nbsp;&nbsp;<a class="total_task">05</a></h5>
+                                                        <div id="create_todo" class="dropdown" style="display:none">
+                                                            <span class="dropdown-toggle py-2" id="dropdownMenuButton04" data-toggle="dropdown">
+                                                            <i class="ri-more-fill"></i>
+                                                            </span>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton04">
+                                                                <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
+                                                            </div>
+                                                            <a href="javascript:addtodo()"><i class="ri-add-line"  title="Create task"></i></a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12" id="d_todo">
+                                            <div class="card active_addtodo" id="add_todo" style="display:none">
+                                                <div class="card-body"> 
+                                                    <h6 class="title-list">List</h6>
+                                                    <div  class="title-name">
+                                                        <a href="javascript:hidetodo()">
+                                                            <i class="ri-close-fill">
+                                                            </i>
+                                                        </a>
+                                                        <input class="title_todo" placeholder="Task name or type '/' for commands"/>
+                                                        <a id="show_member" data-toggle="dropdown">
+                                                            <div class="iq-media-group" id="d_addmembertodo">
+                                                                <i class="ri-user-add-line"></i>
+                                                            </div>
+                                                            
+                                                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_member">
+                                                                <a>&nbsp;&nbsp;
+                                                                    <i class="ri-search-line">
+                                                                    <input class="search_name_member" placeholder="Tìm kiếm"/>
+                                                                    </i>
+                                                                </a>
+                                                                <div id="d_listnember">
+                                                                    <div class="aib">
+                                                                        <a class="dropdown-item user_name" href="javascript:themnhanvien()" id="user_member">
+                                                                            <img class="avatar-30 rounded"  src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Bạn
+                                                                        </a>
+                                                                        <a class="btn_profile" data-target="#exampleModal" data-toggle="modal">Profile</a>
+                                                                    </div>
+                                                                    <div class="aib">
+                                                                        <a class="dropdown-item user_name" id="user">
+                                                                            <img class="avatar-30 rounded" src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Đức Hiệu
+                                                                        </a>
+                                                                        <button class="btn_profile">Profile</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="todo_more">
+                                                        <a class="set-priority"  data-toggle='dropdown' data-placement="top" data-original-title="Set priority">
+                                                            <i id="d_priority" data-toggle="tooltip" data-placement="top" data-original-title="Set priority" class="ri-flag-2-line"></i>
+                                                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_priority">
+                                                                <a id="d_setpri_1" class="dropdown-item" data-original-title="Urgent Priority" href="javascript:addPriority('1')">
+                                                                        <i class="ri-flag-2-fill urgent"></i>&nbsp;Urgent&nbsp;&nbsp;
+                                                                </a>
+                                                                <a id="d_setpri_2" class="dropdown-item" data-original-title="High Priority" href="javascript:addPriority('2')">
+                                                                        <i class="ri-flag-2-fill high"></i>&nbsp;Hight&nbsp;&nbsp;
+                                                                </a>
+                                                                <a id="d_setpri_3" class="dropdown-item" data-original-title="Normal Priority" href="javascript:addPriority('3')">
+                                                                    <i class="ri-flag-2-fill normal"></i>&nbsp;Normal&nbsp;&nbsp;
+                                                                </a>
+                                                                <a id="d_setpri_4" class="dropdown-item" data-original-title="Low Priority" href="javascript:addPriority('4')">
+                                                                    <i class="ri-flag-2-fill low"></i>&nbsp;Low&nbsp;&nbsp;
+                                                                </a>
+                                                                <a id="d_setpri_5" class="dropdown-item" data-original-title="Set priority" href="javascript:addPriority('5')">
+                                                                    <i class="ri-close-line clear"></i></i>&nbsp;Clear
+                                                                </a>
+                                                            </div>
+                                                        </a>
+                                                        <a class="start-date"  data-toggle="tooltip" data-placement="top" data-original-title="Start Date">
+                                                            <i class="ri-calendar-todo-fill" id="start_date"></i>
+                                                               
+                                                        </a>
+                                                        <a class="end-date" data-toggle="tooltip" data-placement="top" data-original-title="End Date">
+                                                            <i class="ri-calendar-check-fill" id="end_date"></i>
+                                                            
+                                                        </a>
+                                                        <div class="btn-save"><a>SAVE</a> </div>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card" id="task_1">
+                                                <div class="card-body">
+                                                    <h6  class="title-list mb-3">Space List</h6>
+                                                    <div class="to-do-list">
+                                                        <h5 class="title-work" id="d_noidungcongviec">Công tác sài gòn</h5>
+                                                        <div class="iq-media-group">
+                                                            <a class="iq-media" data-toggle="dropdown" style="z-index:unset">
+                                                                <img src="/images/user/longdoan.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
+                                                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_info">
+                                                                    <div class="dropdown-item avatar-status-info" >
+                                                                        <img class="avatar-info" src="images/user/longdoan.jpg" alt="#" data-original-title="" title="">
+                                                                        <p class="avatar-status-info__status_online avatar-status-info__status"> Online </p>
+                                                                    </div>
+                                                                    <div class="avatar-name">
+                                                                        <a>Long Doãn Văn
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="avatar-email">
+                                                                        <a>
+
+                                                                            <i class="ri-mail-line">
+                                                                            </i>&nbsp;&nbsp; itlong@pranda.com.vn
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="avatar-locatime">
+                                                                    <a>
+                                                                        <i class="ri-time-line"></i>
+                                                                        &nbsp;&nbsp;<script>document.write(new Date().toLocaleString('en-us', { hour: 'numeric', minute: 'numeric', hour12: true }))</script></a>
+                                                                    </div>
+                                                                    <div class="avatar-btn">
+                                                                        <a data-target="#exampleModal" data-toggle="modal">View Profile</a>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="todo-panel-board">
+                                                        <i class="ri-flag-2-fill urgent"></i>
+                                                        <span data-toggle="tooltip" data-placement="top" data-original-title="16/02/2023" id="d_ngaybatdau">16/02/2023</span>
+                                                        <span class="about"> - </span>
+                                                        <span data-toggle="tooltip" data-placement="top" data-original-title="17/02/2023" id="d_ngayketthuc">17/02/2023</span>
+                                                    </div>  
+                                                    <div class="todo-tool">
+                                                        <i data-toggle="tooltip" data-placement="top" data-original-title="Edit task"  class="ri-edit-2-fill  edit-todo"></i>
+                                                        <div id="td-tool">
+                                                            <a class="todo-complete" id="hidden_compeleted" href="javascript:Compeleted()"><i data-toggle="tooltip" data-placement="top" data-original-title="Completed task"class="ri-check-line todo-complete"></i></a>
+                                                            <a id="todo-progress" class="todo-progress" href="javascript:TodoMoveInprogress()">
+                                                                <i data-toggle="tooltip" data-placement="top" data-original-title="Move inprogress" class="ri-arrow-right-line todo-progress">
+                                                                </i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-transparent mb-0 desk-info">
+                                <div class="card-body p-0">                           
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card" style="border-top: 4px solid rgb(4, 169, 244);">
+                                                <div class="card-body" >                           
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5>In Progress &nbsp;&nbsp;<a class="total_task">03</a></h5>
+                                                        <div class="dropdown">
+                                                            <span class="dropdown-toggle py-2" id="dropdownMenuButton05" data-toggle="dropdown">
+                                                            <i class="ri-more-fill"></i>
+                                                            </span>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton05">
+                                                                <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12" id="d_progress">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-transparent mb-0 desk-info">
+                                <div class="card-body p-0">                           
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card" style="border-top: 4px solid rgb(107, 201, 80);">
+                                                <div class="card-body">                           
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5>Compeleted  &nbsp;&nbsp;<a class="total_task">06</a></h5>
+                                                        <div class="dropdown">
+                                                            <span class="dropdown-toggle py-2" id="dropdownMenuButton06" data-toggle="dropdown">
+                                                            <i class="ri-more-fill"></i>
+                                                            </span>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton06">
+                                                                <a class="dropdown-item" href="#"><i class="ri-file-copy-2-line mr-2"></i>Duplicate</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-edit-2-line mr-2"></i>Rename</a>
+                                                                <a class="dropdown-item" href="#"><i class="ri-delete-bin-5-line mr-2"></i>Delete</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12" id="d_completed">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-full">
+            <i class="modal-ri-close ri-close-line"  data-dismiss="modal" aria-label="Close"></i> 
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="avatar" src="images/user/longdoan.jpg" alt="#" data-original-title="" title="">&nbsp;
+                    <h5 class="modal-title" id="exampleModalLabel" >Long Doãn Văn</h5>
+                    <p class="cu-user-profile-header__status cu-user-profile-header__status_online ng-star-inserted" data-test="user-profile-header__status__online"> Online </p>
+                </div>
+                <div class="modal-body">
+                    <div class="cu-user-status">
+                        <div class="cu-user-role">
+                            <p>Role</p>
+                            <p class="cu-user-input">IT-Staff</p>
+                        </div>
+                        <div class="cu-user-email">
+                            <p>Email</p>
+                            <p class="cu-user-input">itlong@pranda.com.vn</p>
+                        </div>
+                        
+                        <div class="cu-user-time">
+                            <p>Local time</p>
+                            <p class="cu-user-input"><script>document.write(new Date().toLocaleString('en-us', { hour: 'numeric', minute: 'numeric', hour12: true }))</script></p>
+                        </div>
+
+                    </div>
+                    <ul class="nav nav-tabs"  role="tablist">
+                        <li class="nav-item">
+                        <a class="nav-link active" id="notification-tab" data-toggle="tab" href="#notification" role="notification" aria-controls="home" aria-selected="true">Thông báo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Công việc</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="assgin-tab" data-toggle="tab" href="#assgin" role="tab" aria-controls="assgin" aria-selected="false">Giao việc</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+                            <div class="alert text-white bg-warning" role="alert">
+                                <div class="iq-alert-icon">
+                                <i class="ri-alert-line"></i>
+                                </div>
+                                <div class="iq-alert-text">Bạn có một công việc mới hãy kiểm tra !</div>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i class="ri-close-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+                            <ul class="nav nav-tabs"  role="tablist">
+                                <li class="nav-item">
+                                <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-user" role="todo" aria-controls="todo" aria-selected="true">Chưa làm</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" id="progress-tab" data-toggle="tab" href="#progress-user" role="tab" aria-controls="progress" aria-selected="false">Đang làm</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" id="done-tab" data-toggle="tab" href="#assgin-user" role="tab" aria-controls="done" aria-selected="false">Hoàn thành</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="todo-user" role="tabpanel" aria-labelledby="todo-user">
+                                    <a class='line-progress'>
+                                    <div class="task-list" style="background-color: rgb(211, 211, 211);">
+                                    </div>
+                                    <p class="task-name">Hoàn thành công việc template </p>
+                                    </a>
+                                    <a class='line-progress'>
+                                        <div class="task-list" style="background-color: rgb(211, 211, 211);">
+                                        </div>
+                                        <p class="task-name">Hoàn thành công việc template </p>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="progress-user" role="tabpanel" aria-labelledby="progress-user">
+                                <a class='line-progress'>
+                                    <div class="task-list" style="background-color: rgb(168, 117, 255);">
+                                    </div>
+                                    <p class="task-name">Hoàn thành công việc template </p>
+                                </a>
+                                </div>
+                                <div class="tab-pane fade" id="assgin-user" role="tabpanel" aria-labelledby="assgin-user">
+                                    <a class='line-progress'>
+                                    <div class="task-list" style="background-color: rgb(107, 201, 80);">
+                                    </div>
+                                    <p class="task-name">Hoàn thành công việc template </p>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="assgin" role="tabpanel" aria-labelledby="assgin-tab">
+                        <label class="assgin-profile">Assgin To</label>
+                        <a class='line-progress'>
+                            <div class="task-list" style="background-color: rgb(211, 211, 211);">
+                            </div>
+                            <p class="task-name">Họp được giao cho Long Doãn</p>
+                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </div>
+    <div id="notification_change" class="toast fade" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header">
+            <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="#007aff"></rect>
+            </svg>
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+    <footer class="iq-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="../backend/privacy-policy.html">IT Pranda Viet Nam © 2023</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <span class="mr-1">
+                        <script>document.write(new Date().getFullYear())</script>©
+                    </span> <a href="#" class="">IT Pranda Viet Nam</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/backend-bundle.min.js"></script>
+    <script src="js/vn.js"></script>
+    <script src="js/flatpickr.js"></script>
+    <script src="js/table-treeview.js"></script>
+    <script src="js/customizer.js"></script>
+    <script async src="js/chart-custom.js"></script>
+    <script async src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/moment.min.js"></script>
+</body>
+
+</html>
