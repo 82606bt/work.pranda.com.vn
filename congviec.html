@@ -394,7 +394,6 @@
                                                                     </div>
                                                                     <div class="avatar-email">
                                                                         <a>
-
                                                                             <i class="ri-mail-line">
                                                                             </i>&nbsp;&nbsp; itlong@pranda.com.vn
                                                                         </a>
@@ -413,13 +412,13 @@
                                                         
                                                     </div>
                                                     <div class="todo-panel-board">
-                                                        <i class="ri-flag-2-fill urgent"></i>
+                                                        <i class="ri-flag-2-fill urgent" data-toggle="tooltip" data-placement="top" data-original-title="Urgent Priority"></i>
                                                         <span data-toggle="tooltip" data-placement="top" data-original-title="16/02/2023" id="d_ngaybatdau">16/02/2023</span>
                                                         <span class="about"> - </span>
                                                         <span data-toggle="tooltip" data-placement="top" data-original-title="17/02/2023" id="d_ngayketthuc">17/02/2023</span>
                                                     </div>  
                                                     <div class="todo-tool">
-                                                        <i data-toggle="tooltip" data-placement="top" data-original-title="Edit task"  class="ri-edit-2-fill  edit-todo"></i>
+                                                        <a data-target=".bd-example-modal-xl" data-toggle="modal"><i data-toggle="tooltip" data-placement="top" data-original-title="Edit task"  class="ri-edit-2-fill  edit-todo"></i></a>
                                                         <div id="td-tool">
                                                             <a class="todo-complete" id="hidden_compeleted" href="javascript:Compeleted()"><i data-toggle="tooltip" data-placement="top" data-original-title="Completed task"class="ri-check-line todo-complete"></i></a>
                                                             <a id="todo-progress" class="todo-progress" href="javascript:TodoMoveInprogress()">
@@ -499,7 +498,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal fade right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true" >
         <div class="modal-full">
             <i class="modal-ri-close ri-close-line"  data-dismiss="modal" aria-label="Close"></i> 
             <div class="modal-dialog" role="document">
@@ -604,7 +603,109 @@
             </div>
             </div>
         </div>
-     </div>
+    </div>
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+           <div class="modal-content">
+              <div class="modal-header modal-header-background">
+                 <h5 class="modal-title modal-title-text">Space > List</h5>
+                 <button type="button" class="task-close" class="close" data-dismiss="modal" aria-label="Close">
+                 <span class="task-close-icon" aria-hidden="true">×</span>
+                 </button>
+              </div>
+              <div class="modal-body modal-page">
+                 <div class="modal-left">
+                    <div class="modal-task-status" style="background:  rgb(211, 211, 211);"> to do </div>
+                    <a class="modal-move-inprogress"><i class="modal-ri-arrow-right ri-arrow-right-s-line"></i></a>
+                    <a class="modal-move-compeleted"><i class="modal-ri-check ri-check-line"></i></a>
+                    
+                    <div class="modal-member-task">
+                        <div class="iq-media-group">
+                            <a href="#" class="iq-media">
+                                <img src="./images/user/longdoan.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
+                            </a>
+                            <a class="iq-media" data-toggle="dropdown">
+                                <img src="./images/controller/add_user.png" class="img-fluid avatar-40 rounded-circle" alt="" style="border: 2px dotted #000;">
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_member">
+                                    <a>&nbsp;&nbsp;
+                                        <i class="ri-search-line">
+                                        <input class="search_name_member" placeholder="Tìm kiếm"/>
+                                        </i>
+                                    </a>
+                                    <div id="d_listnember">
+                                        <div class="aib">
+                                            <a class="dropdown-item user_name" href="javascript:themnhanvien()" id="user_member">
+                                                <img class="avatar-30 rounded"  src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Bạn
+                                            </a>
+                                            <a class="btn_profile" data-target="#exampleModal" data-toggle="modal">Profile</a>
+                                        </div>
+                                        <div class="aib">
+                                            <a class="dropdown-item user_name" id="user">
+                                                <img class="avatar-30 rounded" src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Đức Hiệu
+                                            </a>
+                                            <button class="btn_profile">Profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                                
+                           
+                        </div>
+                    </div>
+                    <a class="line-cut"></a>
+                    <div class="modal-priority-task">
+                        <a class="modal-priority"  data-toggle='dropdown' data-placement="top" data-original-title="Set priority">
+                            <i id="d_priority" data-toggle="tooltip" data-placement="top" data-original-title="Urgent priority" class="ri-flag-2-fill urgent"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_priority">
+                            <a id="d_setpri_1" class="dropdown-item" data-original-title="Urgent Priority" href="javascript:addPriority('1')">
+                                    <i class="ri-flag-2-fill urgent"></i>&nbsp;Urgent&nbsp;&nbsp;
+                            </a>
+                            <a id="d_setpri_2" class="dropdown-item" data-original-title="High Priority" href="javascript:addPriority('2')">
+                                    <i class="ri-flag-2-fill high"></i>&nbsp;Hight&nbsp;&nbsp;
+                            </a>
+                            <a id="d_setpri_3" class="dropdown-item" data-original-title="Normal Priority" href="javascript:addPriority('3')">
+                                <i class="ri-flag-2-fill normal"></i>&nbsp;Normal&nbsp;&nbsp;
+                            </a>
+                            <a id="d_setpri_4" class="dropdown-item" data-original-title="Low Priority" href="javascript:addPriority('4')">
+                                <i class="ri-flag-2-fill low"></i>&nbsp;Low&nbsp;&nbsp;
+                            </a>
+                            <a id="d_setpri_5" class="dropdown-item" data-original-title="Set priority" href="javascript:addPriority('5')">
+                                <i class="ri-close-line clear"></i></i>&nbsp;Clear
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="modal-create">
+                        <a data-toggle="tooltip"  data-placement="top" data-original-title="Long Doãn Văn đã tạo task">CREATED</a>
+                        <br/>
+                        <a>16/02/2023</a>
+                    </div>
+                    <div class="modal-time-start">
+                        <a>TIME TRACKED</a>
+                        <br/>
+                    </div>
+                    <div class="modal-day-start">
+                        <a>START DATE</a>
+                        <br/>
+                        <a>18/02/2023</a>
+                    </div>
+                    <div class="modal-day-end">
+                        <a>DUE DATE</a>
+                        <br/>
+                        <a>21/02/2023</a>
+                    </div>
+                
+                </div>
+            </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+           </div>
+        </div>
+    </div>
     <div id="notification_change" class="toast fade" style="position: absolute; top: 0; right: 0;">
         <div class="toast-header">
             <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">

@@ -92,8 +92,18 @@ $(document).ready(function () {
   });
   formatDateStart();
   formatDateEnd();
+  NoCloseModal();
 });
-
+function NoCloseModal() {
+  const modal = document.getElementById("exampleModal");
+  const modalContent = document.querySelector(".modal-content");
+  modal.addEventListener("click", function (event) {
+    if (event.target === modalContent) {
+      return;
+    }
+    modal.style.display = "none";
+  });
+}
 function addMember() {
   var listmember = document.getElementById("d_addmembertodo");
   var newMember = document.createElement("a");
