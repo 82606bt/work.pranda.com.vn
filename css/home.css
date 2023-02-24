@@ -228,6 +228,7 @@ font-size: 20px;
     }
     .btn-save{
         margin-left: 30.5em !important;
+        margin-right:-0em !important;
     }
 
 }
@@ -475,6 +476,9 @@ font-size: 20px;
     .iq-top-navbar {
         left: -1.5em !important;
     }
+    .btn-save{
+        margin-right:-0.3em !important;
+    }
 }
 .modal-page{
     display:flex;
@@ -649,4 +653,108 @@ font-size: 20px;
 #timer{
     font-size: 10px !important;
     color: #77777780 !important;
+}
+.modal-body-left{
+    width: 47.94%;
+}
+.modal-name-task{
+    margin-top:1em;
+    border:none;
+    font-size: 14px;
+    width: 100%;
+}
+.modal-name-task:hover,.modal-name-task:active{
+    border: 1px solid #dedede
+}
+.modal-description-task{
+    margin-top:1em;
+    border:none;
+    width: 100%;
+    font-size: 14px;
+}
+.modal-description-task:hover,.modal-description-task:active{
+    border: 1px solid #dedede
+}
+.modal-description-task::placeholder{
+    font-size: 14px;
+}
+.box-color{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    border: 1px solid currentColor;
+}
+.modal-body-right{
+    font-size: 11px;
+    color:#77777780;
+    margin-right: 11em;
+}
+.modal-page-body{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-cm{
+    margin-top: 1em;
+    cursor: pointer;
+    color:#fff !important;
+    font-size: 0.7rem !important;
+}
+.input-comment{
+    border: 1px solid #dedede;
+    width: 100%;
+}
+@media (max-width: 1299px){
+    .modal-page{
+        display: inline;
+    }
+    .modal-left{
+        width: unset;
+    }
+    .modal-page-body{
+        display: inline;
+    }
+    .modal-time-start{
+        padding-left: 2em;
+    }
+    .modal-day-start{
+        padding-left: 2em;
+    }
+    .modal-day-end{
+        padding-left: 2em;
+    }
+    .modal-body-left{
+        width:unset;
+    }
+    .modal-body-right{
+        margin-right: unset;
+    }
+}
+/* css đăng nhập */
+.bg-login{
+    color: #343e47 !important;
+    background-color: #e1dac1 !important;
+}
+.color-login{
+    color:#343e47 !important;
+}
+.color-login::placeholder{
+    color:#343e47 !important;
+}
+.login-content .floating-label label {
+    color:#343e47 !important    
+}
+#datework{
+    color:#343e47 !important    
+}
+#d_dangnhap{
+    width: 100%;
+    font-weight: 500;
+}
+.login{
+    background-image: url(../images/background-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

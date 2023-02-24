@@ -249,7 +249,7 @@
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton03">
                                                 <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(211, 211, 211);"></i>To Do</a>
                                                 <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(4, 169, 244);"></i>In Progress</a>
-                                                <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(107, 201, 80);"></i>Compeleted</a> 
+                                                <a class="dropdown-item" href="#"><i class="ri-checkbox-blank-circle-fill mr-2" style="color:rgb(107, 201, 80);"></i>Complete</a> 
                                             </div>
                                         </div>
                                         <div class="list-grid-toggle d-flex align-items-center mr-3">
@@ -471,7 +471,7 @@
                                             <div class="card" style="border-top: 4px solid rgb(107, 201, 80);">
                                                 <div class="card-body">                           
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <h5>Compeleted  &nbsp;&nbsp;<a class="total_task">06</a></h5>
+                                                        <h5>Complete  &nbsp;&nbsp;<a class="total_task">06</a></h5>
                                                         <div class="dropdown">
                                                             <span class="dropdown-toggle py-2" id="dropdownMenuButton06" data-toggle="dropdown">
                                                             <i class="ri-more-fill"></i>
@@ -613,95 +613,112 @@
                  <span class="task-close-icon" aria-hidden="true">×</span>
                  </button>
               </div>
-              <div class="modal-body modal-page">
-                 <div class="modal-left">
-                    <div class="modal-task-status" style="background:  rgb(211, 211, 211);"> to do </div>
-                    <a class="modal-move-inprogress"><i class="modal-ri-arrow-right ri-arrow-right-s-line"></i></a>
-                    <a class="modal-move-compeleted"><i class="modal-ri-check ri-check-line"></i></a>
-                    
-                    <div class="modal-member-task">
-                        <div class="iq-media-group">
-                            <a href="#" class="iq-media">
-                                <img src="./images/user/longdoan.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
-                            </a>
-                            <a class="iq-media" data-toggle="dropdown">
-                                <img src="./images/controller/add_user.png" class="img-fluid avatar-40 rounded-circle" alt="" style="border: 2px dotted #000;">
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_member">
-                                    <a>&nbsp;&nbsp;
-                                        <i class="ri-search-line">
-                                        <input class="search_name_member" placeholder="Tìm kiếm"/>
-                                        </i>
-                                    </a>
-                                    <div id="d_listnember">
-                                        <div class="aib">
-                                            <a class="dropdown-item user_name" href="javascript:themnhanvien()" id="user_member">
-                                                <img class="avatar-30 rounded"  src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Bạn
-                                            </a>
-                                            <a class="btn_profile" data-target="#exampleModal" data-toggle="modal">Profile</a>
-                                        </div>
-                                        <div class="aib">
-                                            <a class="dropdown-item user_name" id="user">
-                                                <img class="avatar-30 rounded" src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Đức Hiệu
-                                            </a>
-                                            <button class="btn_profile">Profile</button>
+              <div class="modal-body">
+                <div class="modal-page">
+                    <div class="modal-left">
+                        <div class="modal-task-status" style="background:  rgb(211, 211, 211);"> to do </div>
+                        <a class="modal-move-inprogress"><i class="modal-ri-arrow-right ri-arrow-right-s-line"></i></a>
+                        <a class="modal-move-compeleted"><i class="modal-ri-check ri-check-line"></i></a>
+                        
+                        <div class="modal-member-task">
+                            <div class="iq-media-group">
+                                <a href="#" class="iq-media">
+                                    <img src="./images/user/longdoan.jpg" class="img-fluid avatar-40 rounded-circle" alt="">
+                                </a>
+                                <a class="iq-media" data-toggle="dropdown">
+                                    <img src="./images/controller/add_user.png" class="img-fluid avatar-40 rounded-circle" alt="" style="border: 2px dotted #000;">
+                                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_member">
+                                        <a>&nbsp;&nbsp;
+                                            <i class="ri-search-line">
+                                            <input class="search_name_member" placeholder="Tìm kiếm"/>
+                                            </i>
+                                        </a>
+                                        <div id="d_listnember">
+                                            <div class="aib">
+                                                <a class="dropdown-item user_name" href="javascript:themnhanvien()" id="user_member">
+                                                    <img class="avatar-30 rounded"  src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Bạn
+                                                </a>
+                                                <a class="btn_profile" data-target="#exampleModal" data-toggle="modal">Profile</a>
+                                            </div>
+                                            <div class="aib">
+                                                <a class="dropdown-item user_name" id="user">
+                                                    <img class="avatar-30 rounded" src="images/user/i1.jpg" alt="#" data-original-title="" title="">&nbsp; Đức Hiệu
+                                                </a>
+                                                <button class="btn_profile">Profile</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                                    
                                 
-                           
+                            </div>
+                        </div>
+                        <a class="line-cut"></a>
+                        <div class="modal-priority-task">
+                            <a class="modal-priority"  data-toggle='dropdown' data-placement="top" data-original-title="Set priority">
+                                <i id="d_priority" data-toggle="tooltip" data-placement="top" data-original-title="Urgent priority" class="ri-flag-2-fill urgent"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_priority">
+                                <a id="d_setpri_1" class="dropdown-item" data-original-title="Urgent Priority" href="javascript:addPriority('1')">
+                                        <i class="ri-flag-2-fill urgent"></i>&nbsp;Urgent&nbsp;&nbsp;
+                                </a>
+                                <a id="d_setpri_2" class="dropdown-item" data-original-title="High Priority" href="javascript:addPriority('2')">
+                                        <i class="ri-flag-2-fill high"></i>&nbsp;Hight&nbsp;&nbsp;
+                                </a>
+                                <a id="d_setpri_3" class="dropdown-item" data-original-title="Normal Priority" href="javascript:addPriority('3')">
+                                    <i class="ri-flag-2-fill normal"></i>&nbsp;Normal&nbsp;&nbsp;
+                                </a>
+                                <a id="d_setpri_4" class="dropdown-item" data-original-title="Low Priority" href="javascript:addPriority('4')">
+                                    <i class="ri-flag-2-fill low"></i>&nbsp;Low&nbsp;&nbsp;
+                                </a>
+                                <a id="d_setpri_5" class="dropdown-item" data-original-title="Set priority" href="javascript:addPriority('5')">
+                                    <i class="ri-close-line clear"></i></i>&nbsp;Clear
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <a class="line-cut"></a>
-                    <div class="modal-priority-task">
-                        <a class="modal-priority"  data-toggle='dropdown' data-placement="top" data-original-title="Set priority">
-                            <i id="d_priority" data-toggle="tooltip" data-placement="top" data-original-title="Urgent priority" class="ri-flag-2-fill urgent"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="show_priority">
-                            <a id="d_setpri_1" class="dropdown-item" data-original-title="Urgent Priority" href="javascript:addPriority('1')">
-                                    <i class="ri-flag-2-fill urgent"></i>&nbsp;Urgent&nbsp;&nbsp;
-                            </a>
-                            <a id="d_setpri_2" class="dropdown-item" data-original-title="High Priority" href="javascript:addPriority('2')">
-                                    <i class="ri-flag-2-fill high"></i>&nbsp;Hight&nbsp;&nbsp;
-                            </a>
-                            <a id="d_setpri_3" class="dropdown-item" data-original-title="Normal Priority" href="javascript:addPriority('3')">
-                                <i class="ri-flag-2-fill normal"></i>&nbsp;Normal&nbsp;&nbsp;
-                            </a>
-                            <a id="d_setpri_4" class="dropdown-item" data-original-title="Low Priority" href="javascript:addPriority('4')">
-                                <i class="ri-flag-2-fill low"></i>&nbsp;Low&nbsp;&nbsp;
-                            </a>
-                            <a id="d_setpri_5" class="dropdown-item" data-original-title="Set priority" href="javascript:addPriority('5')">
-                                <i class="ri-close-line clear"></i></i>&nbsp;Clear
-                            </a>
+                    <div class="modal-right">
+                        <div class="modal-create">
+                            <a data-toggle="tooltip"  data-placement="top" data-original-title="Long Doãn Văn đã tạo task">CREATED</a>
+                            <br/>
+                            <a>16/02/2023</a>
                         </div>
+                        <div class="modal-time-start">
+                            <a>TIME TRACKED</a>
+                            <br/>
+                        </div>
+                        <div class="modal-day-start">
+                            <a>START DATE</a>
+                            <br/>
+                            <a>18/02/2023</a>
+                        </div>
+                        <div class="modal-day-end">
+                            <a>DUE DATE</a>
+                            <br/>
+                            <a>21/02/2023</a>
+                        </div>
+                    
                     </div>
                 </div>
-                <div class="modal-right">
-                    <div class="modal-create">
-                        <a data-toggle="tooltip"  data-placement="top" data-original-title="Long Doãn Văn đã tạo task">CREATED</a>
+                <div class="modal-page-body">
+                    <div class="modal-body-left">
+                        <input class="modal-name-task" placeholder="Họp"/>
                         <br/>
-                        <a>16/02/2023</a>
+                        <textarea class="modal-description-task" placeholder="Description or type '/' for commands">
+                        </textarea>
                     </div>
-                    <div class="modal-time-start">
-                        <a>TIME TRACKED</a>
+                    <div class="modal-body-right">
+                        <a>Bạn đã cập nhật từ <a class="box-color" style="background-color:rgb(211, 211, 211)"></a> Todo sang <a class="box-color" style="background-color:rgb(168, 117, 255)"></a> In Progress</a>
                         <br/>
-                    </div>
-                    <div class="modal-day-start">
-                        <a>START DATE</a>
+                        <a>Bạn đã cập nhật từ <a class="box-color" style="background-color:rgb(168, 117, 255)"></a> In Progress sang <a class="box-color" style="background-color:rgb(107, 201, 80)"></a> Complete</a>
                         <br/>
-                        <a>18/02/2023</a>
+                        <input class="input-comment" placeholder="Comment or type '/' for commands"/>
+                        <a type="button" class="btn btn-info mt-2 btn-cm">Comment</a>
                     </div>
-                    <div class="modal-day-end">
-                        <a>DUE DATE</a>
-                        <br/>
-                        <a>21/02/2023</a>
-                    </div>
-                
                 </div>
             </div>
               <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary">Save changes</button>
+                 <button type="button" class="btn btn-primary">Thay đổi</button>
               </div>
            </div>
         </div>
